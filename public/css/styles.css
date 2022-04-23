@@ -1,0 +1,179 @@
+/* PALETA DE COLORES
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a; 
+
+Cuerpos de texto: 12px
+Titulares (Basado en tu última visita/Ofertas): 24px
+Precios: 18px
+Descuentos: 16px
+Descripciones: 16px
+
+*/
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    background-color: #ebebeb;
+}
+
+header {
+    background-color: #EAC926;
+
+}
+.logo-busqueda-subtituloHeader{
+    margin: 5%;
+}
+.logo{
+    width: 50%;
+    display: inline;
+    
+}
+
+.barra-busqueda{
+    background-color: white;
+    width: 100px;
+    display: inline;
+    border: 5%;
+    align-items: top;
+}
+.lupita{
+    color: black; 
+    border: solid black 0.5px;
+    background-color: #ebebeb; 
+    padding: 1px; 
+    padding-top: 2px;
+}
+
+.subtituloHeader{
+    text-align: center;
+    font-size: 100%;
+    margin: 10px;
+}
+
+main{
+    text-align: center;
+    margin: auto;
+    width: 90%;
+}
+
+.caja-padre{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.tarjeta{
+    border: solid 1px #ebebeb;
+    text-align: left;
+    width: 280px;
+    margin: 10px;
+}
+
+.banner{
+    width: 100%;
+}
+
+.descripcion{
+    /*border: solid 1px #ebebeb;*/
+    box-sizing: border-box;
+    padding: 15px;
+    font-size: 16px;
+    background-color:white;    
+}
+
+main .icono{/*el camion*/
+    color: #39b54a;
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: relative;
+    left: 210px;
+    top: -30px;
+}
+
+.imagenes{
+    width: 100%;
+}
+ul {
+    list-style: none;
+}
+
+.titulares {
+    font-size: 24px;
+    margin: 10px 0px 10px 0px ;
+}
+
+.precios {
+    font-size: 18px;
+    width: 30%;
+    display: inline;
+}
+
+.descuentos{
+    font-size: 16px;
+    width: 70%;
+    display: inline;
+    color: #39b54a;
+}
+
+
+.pieDePagina{
+    text-align: center;
+    margin: 0px;
+}
+
+.icono{
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+
+@media (max-width: 361px){
+    .descripcion{
+        display: none;
+    }
+    .site{
+        display: none;
+    }
+    .login-navbar{
+        display: none;
+    }
+}
+
+@media (min-width: 769px){
+    .tarjeta{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100); 
+    }
+    .logo{
+        display: inline;
+    }
+    .barra-busqueda{
+        display: inline;
+    }
+    .subtituloHeader{
+        display: inline;
+    }
+    .logo-busqueda-subtituloHeader{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: nowrap; 
+        align-items: center;   
+    }   
+}
