@@ -33,10 +33,10 @@
             <li></li>
         </ol> -->
 
-        <!-- Barra de navegación que posea las siguientes opciones: -->
+        <!-- Barra de navegación que posea las siguientes opciones:
         <div class="siteYlogin">
-            <div class="site">
-                <ul> <!-- para poner una lista sin orden 
+            <div class="site">  -->
+               <!-- <ul>  para poner una lista sin orden 
                     <li><a href="http://www.OEFRTA.com">Ofertas</a></li>
                     <li><a href="http://www.TIENDA.com">Tiendas Oficiales</a></li>
                     <li><a href="http://www.VENDER.com">Vender</a></li>
@@ -62,15 +62,15 @@
     <img class="banner" src="./images/img-home-banner.jpg" alt="Imagen Banner Mercado Liebre">
     -->
     <main class="mainRegister">
-        <h2>hoja de registro</h2>
+        <h2></h2>
         <form action="" method="post" class="formularioRegister">
             <div class="controlFormulario">
                 <label>Nombre y apellido</label>
-                <input class="control" type="text" name="nombre" placeholder="Ariel Silva" required minlength="5" maxlength="40">
+                <input class="control al50" type="text" name="nombre" placeholder="Ariel Silva" required minlength="5" maxlength="40">
             </div>
             <div class="controlFormulario">
                 <label>Nombre de Usuario</label>
-                <input class="control" type="text" name="nombreUsuario" placeholder="Ari_Sil" required minlength="5" maxlength="20">
+                <input class="control al50" type="text" name="nombreUsuario" placeholder="Ari_Sil" required minlength="5" maxlength="20">
             </div>
             <div class="controlFormulario">
                 <label>Fecha de Nacimiento</label>
@@ -78,7 +78,7 @@
             </div>
             <div class="controlFormulario">
                 <label>Domicilio</label>
-                <input class="control" type="text" name="domicilio" placeholder="Calle Falsa 123" required pattern="[A-Za-z0-9]{5,40}">
+                <input class="control al50" type="text" name="domicilio" placeholder="Calle Falsa 123" required pattern="[A-Za-z0-9]{5,40}">
             </div>
             <div class="controlFormulario">
                 <label>Perfil de Usuario</label>
@@ -91,11 +91,11 @@
             <div class="controlFormulario">
                 <label>Categoria:</label>                
                 <ul>
-                    <li><input type="checkbox" value="categorias">Hogar</li>
-                    <li><input type="checkbox" value="categorias">Electro</li>
-                    <li><input type="checkbox" value="categorias">Moda</li>
-                    <li><input type="checkbox" value="categorias">Jugueteria</li>
-                    <li><input type="checkbox" value="categorias">Vida Sana</li>
+                    <li><input type="checkbox" name="categorias" value="hogar">Hogar</li>
+                    <li><input type="checkbox" name="categorias" value="electro">Electro</li>
+                    <li><input type="checkbox" name="categorias" value="moda">Moda</li>
+                    <li><input type="checkbox" name="categorias" value="jugueteria">Jugueteria</li>
+                    <li><input type="checkbox" name="categorias" value="vidaSana">Vida Sana</li>
                 </ul>
             </div>
             <div class="controlFormulario">
@@ -104,11 +104,11 @@
             </div>
             <div class="controlFormulario">
                 <label>Contraseña</label>
-                <input class="control" type="password" name="password" minlength="8" required>
+                <input class="control al50" type="password" name="password" minlength="8" required>
             </div>
             <div class="controlFormulario">
                 <label>Confirmar Contraseña</label>
-                <input class="control" type="password" name="password" minlength="8" required>
+                <input class="control al50" type="password" name="password" minlength="8" required>
             </div>
             <div>
                 <button class="botonFormulario" type="submit"><a href="/home">Enviar</a></button>
@@ -117,21 +117,23 @@
         </form>
     </main>
     <footer  class="pieDePagina">
-        <section>
-            <i class="icono fa-solid fa-credit-card"></i>
-            <h2>Pagá con tarjeta o en efectivo</h2>
-            <h3>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</h3>
-        </section>
-        <section>
-            <i class="icono fa-solid fa-gift"></i>
-            <h2>Envío gratis desde $ 2.500</h2>
-            <h3>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.</h3>
-        </section>
-        <section>
-            <i class="icono fa-solid fa-user-shield"></i>
-            <h2>Seguridad, de principio a fin</h2>
-            <h3>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.</h3>
-        </section>
+        <div class="informacionFooter">
+            <section>
+                <i class="icono fa-solid fa-credit-card"></i>
+                <h2>Pagá con tarjeta o en efectivo</h2>
+                <h3>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</h3>
+            </section>
+            <section>
+                <i class="icono fa-solid fa-gift"></i>
+                <h2>Envío gratis desde $ 2.500</h2>
+                <h3>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.</h3>
+            </section>
+            <section>
+                <i class="icono fa-solid fa-user-shield"></i>
+                <h2>Seguridad, de principio a fin</h2>
+                <h3>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.</h3>
+            </section>
+        </div>
         <section>
             <h3>Copyright © 1999-2020 MercadoLiebre S.R.L.</h3>
         </section>
