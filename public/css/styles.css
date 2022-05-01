@@ -177,7 +177,8 @@ ul {
 }
 
 .formularioRegister{
-    padding: 20px 15px;
+    padding-top: 20px;
+    padding-left: 15px;
     
 }
 .controlFormulario{
@@ -299,7 +300,7 @@ ul {
     .al50{
         width: 50%;
     }
-    .mainRegister, .mainLogin{
+    .formularioRegister, .formularioLogin{
         margin-left: 30%;
     }    
     /* ---------------------------------
@@ -428,7 +429,7 @@ ul {
         width: 50%;
     }
 
-    .mainRegister, .mainLogin{
+    .formularioRegister, .formularioLogin{
         margin-left: 30%;
     }  
     /*.pieDePaginaForm{
