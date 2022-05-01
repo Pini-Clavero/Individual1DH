@@ -15,6 +15,12 @@ app.listen(3000, () => {
     console.log("Servidor corriendo en el puerto 3000")
 }); /* recerva la terminal local para este proyecto */
 
-app.get("/", (req, res) => {  /* en el "/" va "/home" "/carrito" ...  */
+app.get("/home", (req, res) => {  /* en el "/" va "/home" "/carrito" ...  */
     res.sendFile(path.resolve(__dirname, "./views/home.html"))
 })  /* renemos que hacer esto para cada pagina que linkea "home" "log in" "carrito" "descripcion" */
+app.get("/register", (req, res) => {  
+    res.sendFile(path.resolve(__dirname, "./views/register.html"))
+})
+app.get("/login", (req, res) => {  
+    res.sendFile(path.resolve(__dirname, "./views/login.html"))
+})
