@@ -34,7 +34,6 @@ header {
     padding: 1%;
 }
 
-
 .logo{
     width: 50%;
     display: inline;
@@ -42,20 +41,44 @@ header {
 }
 
 .barra-busqueda{
-    background-color: white;
-    width: 100px;
-    display: inline-block;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 3%;
-    font-size: 10px;
-    right: 10px;
     position: relative;
-    overflow: hidden;
-    padding: 3px;
-    border: black solid 1px;
+    padding: 5px;
+    width: 120px; 
+    display: inline-block;
+    bottom: 10px;  
+}
+.barra-busqueda input{
+    width: 100%;
+    height: 20px;
+    padding-left: 15px;
+    font-size: 15px;
+    color: black;
+    outline: none;
+    border: 1px solid silver;
+    border-radius: 30px;
     
 }
+.btn{
+    position: absolute;
+    top: 2px;
+    right: 0;
+    background: #1259c3;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/*.barra-busqueda:hover input{
+    width: 240px;
+}
+.buscar input:focus{
+    width: 240px;
+}*/
 .lupita{
     height: 113%;
     color: black; 
@@ -181,6 +204,9 @@ ul {
     padding-left: 15px;
     
 }
+.formularioRegister input:hover{
+    border-color: #0022AA;
+}
 .controlFormulario{
     margin-bottom: 15px;
     justify-content: left;
@@ -247,15 +273,23 @@ ul {
         flex-wrap: wrap; 
         align-items: center;   
     }
+
+    .barra-busqueda{
+        position: relative;
+        padding: 5px;
+        width: 120px; 
+        display: inline-block;
+        bottom: 0px;  
+    }
     .logo{
         width: 35%;
     }   
-    .barra-busqueda{
+    /*.barra-busqueda{
         margin-left: 10%;
         width: 50%;
         display: inline;
         margin-bottom: 10px;
-    }    
+    } */   
     .burger-menu{
         display: none;
     }
@@ -334,7 +368,16 @@ ul {
         width: 30%;
         margin-left: 10%;
         margin-bottom: 10px;
+        bottom: -5px;
+        right: 70px;
     }
+    /*.barra-busqueda{
+        position: relative;
+        padding: 5px;
+        width: 120px; 
+        display: inline-block;
+        bottom: 10px;  
+    }*/
     .subtituloHeader{
         display: inline;
         width: 33%;
